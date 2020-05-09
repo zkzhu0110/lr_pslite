@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+..//src/io/io.h
+fstream
+-
+iostream
+-
+functional
+-
+vector
+-
+string
+-
+
+..//src/io/load_data_from_disk.h
+string.h
+-
+vector
+-
+set
+-
+src/io/io.h
+../src/io/src/io/io.h
+
+/home/leinao/xflow_demo/src/io/load_data_from_disk.cc
+string
+-
+src/io/load_data_from_disk.h
+/home/leinao/xflow_demo/src/io/src/io/load_data_from_disk.h
+
